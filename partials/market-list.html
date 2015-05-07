@@ -1,0 +1,12 @@
+<div ng-controller="MarketListCtrl">
+	<form ng-submit="searchZip()">
+		Search by zip code: <input type="text" ng-model="zip">
+		<input type="submit" value="Submit">
+	</form>
+
+	<ul class="markets">
+		<li ng-repeat="market in markets">
+			<a href="#/markets/id/{{market.id}}">{{market.marketname}}</a>
+		</li>
+	</ul>
+</div>

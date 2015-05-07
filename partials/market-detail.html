@@ -1,0 +1,7 @@
+<div ng-controller="MarketDetailCtrl">
+	<p>Address: <a href="{{market.GoogleLink}}" target="_blank">{{market.Address}}</a></p>
+	<p>Products: {{market.Products}}</p>
+	<p>Schedule: <span ng-bind-html="market.Schedule"></span></p>
+
+	<button ng-click="goBack()">Back</button>
+</div>
